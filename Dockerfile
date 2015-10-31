@@ -46,4 +46,4 @@ run echo "$USER  ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/$USER
 
 user $USER
 
-cmd $SHELL
+cmd $SHELL -l
