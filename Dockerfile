@@ -15,6 +15,7 @@ run apt-get update && apt-get install -y \
     tcsh \
     tmux \
     tree \
+    unzip \
     vim \
     vim-doc \
     wget
