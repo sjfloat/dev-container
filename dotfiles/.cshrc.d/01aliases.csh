@@ -32,7 +32,7 @@ alias rcpbg      '( \!* ) < /dev/null &'   # for preventing stopped jobs
 alias unbu        'cp \!^.bak \!^'         #
 #
 alias histfilehere 'set histfile=`pwd`/history'
-alias histfiletmux 'set histfile=`pwd`/history'.`tmux display-message -p '#S'`
+#alias histfiletmux 'set histfile=`pwd`/history'.`tmux display-message -p '#S'`
 #
 # git aliases
 alias gsb git-show-branch
