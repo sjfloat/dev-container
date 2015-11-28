@@ -3,6 +3,9 @@ set modelines=5
 set expandtab
 set shiftwidth=4
 set tabstop=4
+set ic
+set ai
+set number
 
 execute pathogen#infect()
 Helptags

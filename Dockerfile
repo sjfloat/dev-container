@@ -7,6 +7,7 @@ env DEBIAN_FRONTEND noninteractive
 run apt-get update && apt-get install -y \
     ctags \
     curl \
+    emacs24-nox \
     git \
     htop \
     make \
@@ -39,7 +40,8 @@ copy dotfiles $HOME/
 run mkdir -p $HOME/.vim/autoload $HOME/.vim/bundle && \
     curl -LSso $HOME/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim && \
     cd $HOME/.vim/bundle && \
-    git clone https://github.com/scrooloose/syntastic.git
+    git clone https://github.com/scrooloose/syntastic.git && \
+    git clone https://github.com/ervandew/supertab.git
 
 copy path-to-setup /usr/bin/path-to-setup
 
