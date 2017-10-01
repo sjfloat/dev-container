@@ -5,6 +5,7 @@ from debian:stretch
 env DEBIAN_FRONTEND noninteractive
 
 run apt-get update && apt-get install -y \
+    locales \
     ctags \
     curl \
     emacs24-nox \
@@ -25,6 +26,10 @@ run ln -s /usr/lib/git-core/git-* /usr/local/bin/
 
 run apt-get clean
 run rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
+    && locale-gen en_US.utf8 \
+    && /usr/sbin/update-locale LANG=en_US.UTF-8
 
 env USER dev
 run adduser $USER
