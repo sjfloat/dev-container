@@ -1,6 +1,6 @@
 # vim:ft=dockerfile
 
-from debian:jessie
+from debian:stretch
 
 env DEBIAN_FRONTEND noninteractive
 
